@@ -44,13 +44,13 @@ const DefaultActions = ({ vertical = false }: { vertical?: boolean }) => {
       flexDirection: vertical ? "column" : "row",
     }}>
       <Link to={`/`}>
-        <Button className="app-btn">Explore</Button>
+        <Button className="app-btn">Tombo</Button>
       </Link>
       <Link to={`/artworks`}>
-        <Button className="app-btn">{connected ? "My Items" : "Artworks"}</Button>
+        <Button className="app-btn">{connected ? "My Items" : "Legend"}</Button>
       </Link>
       <Link to={`/artists`}>
-        <Button className="app-btn">Creators</Button>
+        <Button className="app-btn">Hello</Button>
       </Link>
     </div>
   )
@@ -68,17 +68,17 @@ const MetaplexMenu = () => {
       overlay={<Menu>
         <Menu.Item>
           <Link to={`/`}>
-            <Button className="app-btn">Explore</Button>
+            <Button className="app-btn">Tombo</Button>
           </Link>
         </Menu.Item>
         <Menu.Item>
           <Link to={`/artworks`}>
-            <Button className="app-btn">{connected ? "My Items" : "Artworks"}</Button>
+            <Button className="app-btn">{connected ? "My Items" : "Legend"}</Button>
           </Link>
         </Menu.Item>
         <Menu.Item>
           <Link to={`/artists`}>
-            <Button className="app-btn">Creators</Button>
+            <Button className="app-btn">Hello</Button>
           </Link>
         </Menu.Item>
       </Menu>}
